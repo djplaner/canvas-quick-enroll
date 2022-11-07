@@ -41,15 +41,12 @@
   {/if}
 
   {#if enrolled === false}
-    <button class="canvas-quick-enrol" on:click|preventDefault={startEnroll}
-      >Quick Enroll</button
+    <button class="canvas-quick-enrol" on:click|preventDefault={startEnroll}>Quick Enroll</button
     >
   {/if}
 
   {#if enrolled === true}
-    <button class="canvas-quick-enrol" on:click|preventDefault={startUnEnroll}
-      >Unenroll</button
-    >
+    <button class="canvas-quick-enrol" on:click|preventDefault={startUnEnroll}>Unenroll</button>
   {/if}
 {/if}
 
