@@ -1,6 +1,9 @@
 <script>
   import { canvasDetails } from "./lib/canvasDetails";
-  const version = '0.1.3';
+  const VERSION = '0.1.3';
+  const CONFIG = {
+    sectionName : new RegExp('^Teaching Team.*$')
+  };
 
   // display nothing if homePage is false
   let homePage = false;
@@ -24,7 +27,7 @@
   };
 
   // create the canvas details object that does all the hard work
-  let canvas = new canvasDetails(checkEnroll);
+  let canvas = new canvasDetails(checkEnroll,CONFIG);
 
   // onclick functions
   function startEnroll() {
