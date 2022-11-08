@@ -183,7 +183,7 @@ export class canvasDetails {
 		}
 
 		wf_deleteData(
-			`https://${this.currentHostName}/api/v1/courses/${this.courseId}/enrollments/${enrollment.id}`,
+			`https://${this.currentHostName}/api/v1/courses/${this.courseId}/enrollments/${enrollment.id}?task=delete`,
 			this.csrf
 		).then((response) => {
 			// TODO should handle the response better than this

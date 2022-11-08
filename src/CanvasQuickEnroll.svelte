@@ -1,5 +1,6 @@
 <script>
   import { canvasDetails } from "./lib/canvasDetails";
+  const version = '0.1.3';
 
   // display nothing if homePage is false
   let homePage = false;
@@ -41,8 +42,7 @@
   {/if}
 
   {#if enrolled === false}
-    <button class="canvas-quick-enrol" on:click|preventDefault={startEnroll}>Quick Enroll</button
-    >
+    <button class="canvas-quick-enrol" on:click|preventDefault={startEnroll}>Quick Enroll</button>
   {/if}
 
   {#if enrolled === true}
